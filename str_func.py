@@ -14,3 +14,11 @@ def string_capitalize(value: str) -> str:
         word = word.capitalize()
         words_capitalize.append(word)
     return ' '.join(words_capitalize)
+
+def main():
+    user_string = input("Введите строку")
+    print(f"Все буквы заглавные: {string_upper(user_string)}")
+    print(f"Все слова с заглавной буквы: {string_capitalize(user_string)}")
+
+if __name__ == '__main__':
+    main()
